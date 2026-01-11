@@ -9,4 +9,18 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('revision');
+  count : number = 0;
+  
+  increase() {
+    this.count++;
+  }
+
+  decrease(){
+    this.count--;
+  }
+
+  onTyping(event : any){
+    console.log(event);
+  }
+  
 }
