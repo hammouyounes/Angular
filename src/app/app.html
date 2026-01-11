@@ -3,5 +3,9 @@
 <p><button (click)="increase()">increase</button> <button (click)="decrease()">decrease</button></p>
 
 
-<input (keyup)="onTyping($event)">
+<input (keyup)="onTyping($event)"><br><br><br>
 
+
+<input type="text" [(ngModel)]="username">
+
+<h6>Hello mr {{username}}</h6>
