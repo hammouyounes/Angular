@@ -1,0 +1,14 @@
+import { Component,Input } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  imports: [],
+  templateUrl: './child.html',
+  styleUrl: './child.css',
+})
+export class Child {
+  @Input() name : string = "";
+  @Input() age : number = 0;
+  @Input() isAdmin : boolean = false;
+
+}
