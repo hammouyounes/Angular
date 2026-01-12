@@ -1,12 +1,31 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms'
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('revision');
+  count : number = 0;
+  username : string = "youness";
+  
+  increase() {
+    this.count++;
+  }
+
+  decrease(){
+    this.count--;
+  }
+
+  onTyping(event : any){
+    console.log(event);
+  }
+
+
+  
 }
