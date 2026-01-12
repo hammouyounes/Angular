@@ -1,11 +1,21 @@
-<div style="border: 1px solid blue; padding: 10px;">
-      <h2>I am the Parent</h2>
-      <input [(ngModel)]="name" placeholder="Type your name">
-      <input [(ngModel)]="age" placeholder="Type something...">
-      <label for="">Are you an admin :</label>
-      <input type="checkbox" [(ngModel)]="isAdmin">
-      <br>
-      <app-child [name]="name" [age]="age" [isAdmin]="isAdmin"></app-child>
-      
-</div>
-<br>
+<p>Prix : {{ prix() }}</p>
+<p>Quantite : {{ quantite() }}</p>
+
+<h4>Total : {{ total() }}</h4>
+
+<ul>
+  <button (click)="quantite.update(q => q + 1)">+1</button>
+  <button (click)="quantite.update(q => q - 1)">-1</button>
+</ul>
+
+
+<ul>
+  <button (click)="prix.update(p => p + 1)">+1</button>
+  <button (click)="prix.update(p => p - 1)">-1</button>
+</ul>
+<!-- 
+<button (click)="quantite.update(q => q + 1)">+1</button>
+<button (click)="quantite.update(q => q - 1)">-1</button>
+
+<button (click)="prix.update(p => p + 10)">+10</button>
+<button (click)="prix.update(p => p - 10)">-10</button> -->
