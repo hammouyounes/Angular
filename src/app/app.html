@@ -1,11 +1,11 @@
-<h2>Counter</h2>
-<h4>{{count}}</h4>
-<p><button (click)="increase()">increase</button> <button (click)="decrease()">decrease</button></p>
-
-
-<input (keyup)="onTyping($event)"><br><br><br>
-
-
-<input type="text" [(ngModel)]="username">
-
-<h6>Hello mr {{username}}</h6>
+<div style="border: 1px solid blue; padding: 10px;">
+      <h2>I am the Parent</h2>
+      <input [(ngModel)]="name" placeholder="Type your name">
+      <input [(ngModel)]="age" placeholder="Type something...">
+      <label for="">Are you an admin :</label>
+      <input type="checkbox" [(ngModel)]="isAdmin">
+      <br>
+      <app-child [name]="name" [age]="age" [isAdmin]="isAdmin"></app-child>
+      
+</div>
+<br>
