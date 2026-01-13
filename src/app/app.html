@@ -4,7 +4,7 @@
         @for (item of liste();track $index){
             <li>
                 @if($first){<span>(Debut de la liste)</span>}
-                {{item}}
+                {{item | uppercase}}
                 @if($last){
                  <span>(Fin de la liste)</span>
                 }    
