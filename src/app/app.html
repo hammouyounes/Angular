@@ -1,16 +1,8 @@
 <div>
-    <h3>Listes de (total : {{ liste().length}}) frameworks</h3>
+    <h3>Mes Frameworks (formatés en Kebab-Case)</h3>
     <ul>
-        @for (item of liste();track $index){
-            <li>
-                @if($first){<span>(Debut de la liste)</span>}
-                {{item | uppercase}}
-                @if($last){
-                 <span>(Fin de la liste)</span>
-                }    
-            </li>
-        }@empty {
-            <li>There is no items on the list</li>
+        @for (item of liste(); track $index) {
+            <li>{{ item | kebabCase }}</li>
         }
     </ul>
 </div>
