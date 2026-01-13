@@ -10,7 +10,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.css',
 })
 export class App {
-  isFormValid() : boolean{
-   return true
-  }
+  liste = signal<string[]>(["Angular","React","Laravel","Vue"])
 }

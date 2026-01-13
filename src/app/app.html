@@ -1,3 +1,10 @@
-
-
-<button  [disabled]="!isFormValid()">Save</button>
+<div>
+    <h3>Listes de frameworks</h3>
+    <ul>
+        @for (item of liste();track $index){
+            <li>{{item}}</li>
+        }@empty {
+            <li>There is no items on the list</li>
+        }
+    </ul>
+</div>
