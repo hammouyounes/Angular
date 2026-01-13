@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Child } from './child/child';
 import { FormsModule } from '@angular/forms';
 import { UpperCasePipe } from '@angular/common';
+import { NavComponent } from './nav/nav';
  @Pipe({
     name : "kebabCase"
   })
@@ -14,7 +15,7 @@ export  class KebabCasePipe implements PipeTransform{
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Child, FormsModule, UpperCasePipe,KebabCasePipe],
+  imports: [RouterOutlet, Child, FormsModule, UpperCasePipe,KebabCasePipe,NavComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
