@@ -1,8 +1,8 @@
 <div>
-    <h3>Mes Frameworks (formatés en Kebab-Case)</h3>
-    <ul>
-        @for (item of liste(); track $index) {
-            <li>{{ item | kebabCase }}</li>
-        }
-    </ul>
+    <h1 card-header>Mon super Titre</h1>
+    <p card-body>Le texte principale</p>
+    <app-child>
+        <p>Ceci est mon contenu personnalisé !</p>
+        <button>Action</button>
+    </app-child>
 </div>

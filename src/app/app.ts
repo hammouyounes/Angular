@@ -21,6 +21,6 @@ export  class KebabCasePipe implements PipeTransform{
  
   
 export class App {
-liste = signal<string[]>(["Angular Framework", "React Library", "Laravel PHP", "Vue JS"]);
-  }
+    
+}
 
